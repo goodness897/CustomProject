@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.musr.customproject.MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_fbfbfb">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_inp_gradation" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_de3c1a" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/input_main_value" />
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.musr.customproject.CustomNumberPicker
+                    android:id="@+id/np_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants">
+
+                </com.musr.customproject.CustomNumberPicker>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.musr.customproject.WheelNumberPicker
+                    android:id="@+id/wnp_sample"
+                    android:layout_width="@dimen/picker_width"
+                    android:layout_height="wrap_content"
+                    app:wheel_atmospheric="true"
+                    app:wheel_curved="false"
+                    app:wheel_item_text_color="@color/color_5e5e5e"
+                    app:wheel_max_value="300"
+                    app:wheel_min_value="1"
+                    app:wheel_selected_item_text_color="@color/color_2e2e2e"
+                    app:wheel_visible_item_count="7">
+
+                </com.musr.customproject.WheelNumberPicker>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <com.musr.customproject.CustomSwitch
+        android:id="@+id/sc_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:forceAspectRatio="false"
+        app:switchBkgCheckedImage="@drawable/switch_track_pre"
+        app:switchBkgNotCheckedImage="@drawable/switch_track_nor"
+        app:switchToggleCheckedImage="@drawable/switch_knob" />
+
+
+</LinearLayout>

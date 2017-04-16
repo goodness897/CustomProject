@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WheelPicker">
+        <attr name="wheel_data" format="reference" />
+        <attr name="wheel_selected_item_position" format="integer" />
+        <attr name="wheel_item_text_size" format="dimension" />
+        <attr name="wheel_item_text_color" format="color" />
+        <attr name="wheel_selected_item_text_color" format="color" />
+        <attr name="wheel_same_width" format="boolean" />
+        <attr name="wheel_maximum_width_text" format="string" />
+        <attr name="wheel_maximum_width_text_position" format="integer" />
+        <attr name="wheel_visible_item_count" format="integer" />
+        <attr name="wheel_item_space" format="dimension" />
+        <attr name="wheel_cyclic" format="boolean" />
+        <attr name="wheel_indicator" format="boolean" />
+        <attr name="wheel_indicator_color" format="color" />
+        <attr name="wheel_indicator_size" format="dimension" />
+        <attr name="wheel_curtain" format="boolean" />
+        <attr name="wheel_curtain_color" format="color" />
+        <attr name="wheel_atmospheric" format="boolean" />
+        <attr name="wheel_curved" format="boolean" />
+        <attr name="wheel_item_align" format="enum">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="wheel_min_value" format="integer" />
+        <attr name="wheel_max_value" format="integer" />
+    </declare-styleable>
+
+    <!-- Custom Switch -->
+
+    <declare-styleable name="customSwitch">
+        <attr name="checked" format="boolean" />
+        <attr name="enabled" format="boolean" />
+        <attr name="forceAspectRatio" format="boolean" />
+
+        <attr name="switchDesign" format="enum">
+            <enum name="large" value="0" />
+            <enum name="slim" value="1" />
+            <enum name="android" value="2" />
+        </attr>
+
+        <attr name="switchBkgCheckedColor" format="color" />
+        <attr name="switchBkgNotCheckedColor" format="color" />
+
+        <attr name="switchBkgCheckedImage" format="reference" />
+        <attr name="switchBkgNotCheckedImage" format="reference" />
+
+        <attr name="switchToggleCheckedColor" format="color" />
+        <attr name="switchToggleNotCheckedColor" format="color" />
+
+        <attr name="switchToggleCheckedImage" format="reference" />
+        <attr name="switchToggleNotCheckedImage" format="reference" />
+
+
+    </declare-styleable>
+
+
+</resources>
+
